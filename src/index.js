@@ -9,7 +9,6 @@ const main = () => {
     
     client.on("ready", () => {
         console.log("ready")
-       // client.channels.get(CHANNEL_ID).send("Bot Ready.")
         unchi.start()
     })
 
