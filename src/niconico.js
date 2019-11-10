@@ -12,7 +12,6 @@ module.exports = class unchi extends Eventemitter{
     start(){
         const self = this
         cron.schedule(" */1 * * * *", () => self._niconico())
-        this._niconico()
     }
 
     async _niconico(){
