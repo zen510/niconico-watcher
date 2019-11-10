@@ -1,0 +1,6 @@
+module.exports =
+{
+    "TOKEN":"TOKEN",
+    "CH_ID":"CHANNEL_ID",
+    "KEY_WORD":"KEYWORD"
+}
