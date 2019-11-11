@@ -16,12 +16,14 @@ const main = () => {
 
     let count = 0
     let isFirst = true
-    let time = new Date()
-    let hours = padding(time.getHours(),2)
-    let minutes = padding(time.getMinutes(),2)
-    let nt = `${hours}:${minutes}`
     
     unchi.on("post",unko => {
+
+        let time = new Date()
+        let hours = padding(time.getHours(),2)
+        let minutes = padding(time.getMinutes(),2)
+        let nt = `${hours}:${minutes}`
+        
     if (unko.meta.status === 200) {
         console.log(`${nt} Successfully acquired data.`) 
         let videotitle = unko.data[0].title
