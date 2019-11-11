@@ -31,7 +31,7 @@ const main = () => {
         if (count > oldcount) {
             console.log(`${nt} new video arrived:${videotitle}`)
             isFirst = false
-            if (isFirst = false) client.channels.get(discordcfg.CH_ID).send(`**【動画投稿】**${videotitle}\n${videoURL}`)
+            if (isFirst == false) client.channels.get(discordcfg.CH_ID).send(`**【動画投稿】**${videotitle}\n${videoURL}`)
         }
     }
     else {console.log(`HTTP Status Code:${unko.meta.status}`)}
