@@ -15,7 +15,7 @@ module.exports = class unchi extends Eventemitter{
     }
 
     async _niconico(){
-        const res = await axios.get(`https://api.search.nicovideo.jp/api/v2/video/contents/search?q=${discordcfg.KEY_WORD}&targets=tags&fields=contentId,title,description,tags&_sort=-startTime&_limit=1`)
+        const res = await axios.get(`https://api.search.nicovideo.jp/api/v2/video/contents/search?q=${discordcfg.KEY_WORD}&targets=tags&fields=contentId,title&_sort=-startTime&_limit=1`)
         this.emit("post",res.data)
     }
 }
