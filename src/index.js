@@ -32,7 +32,7 @@ const main = () => {
         count = resjson.meta.totalCount
         if (count > oldcount) {
             console.log(`${nt} new video arrived:${videotitle}`)
-            if (isFirst == false) client.channels.get(discordcfg.CH_ID).send(`**【動画投稿】**${videotitle}\n${videoURL}`)
+            if (isFirst == false) client.channels.get(discordcfg.CH_ID).send(`**【新着動画】**${videotitle}\n${videoURL}`)
         isFirst = false
         }
     }
