@@ -8,6 +8,7 @@ const main = () => {
     const client = new discord.Client()
     
     client.on("ready", () => {
+        client.user.setActivity('ニコニコ動画', { type: 'WATCHING' })
         console.log("ready")
         niconico.start()
     })
