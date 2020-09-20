@@ -13,6 +13,8 @@ const main = () => {
         niconico.start()
     })
 
+    client.on("error", err => console.error(err))
+
     client.login(discordcfg.TOKEN)
 
     let count = 0
