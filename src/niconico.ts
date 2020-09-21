@@ -32,10 +32,10 @@ export default class unchi extends EventEmitter {
     this.count = res.data.meta.totalCount;
 
     if (this.count <= oldCount) return;
-    // if (this.isFirst) {
-    //   this.isFirst = false;
-    //   return;
-    // }
+    if (this.isFirst) {
+      this.isFirst = false;
+      return;
+    }
 
     const data = res.data;
     const video = {
